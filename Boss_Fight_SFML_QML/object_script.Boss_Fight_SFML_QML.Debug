@@ -1,0 +1,14 @@
+INPUT(
+./debug\main.o
+./debug\personne.o
+./debug\contexte.o
+./debug\panier.o
+./debug\sfml.o
+./debug\livingentities.o
+./debug\player.o
+./debug\boss.o
+./debug\moc_myqobject.o
+./debug\moc_personne.o
+./debug\moc_contexte.o
+./debug\moc_panier.o
+);

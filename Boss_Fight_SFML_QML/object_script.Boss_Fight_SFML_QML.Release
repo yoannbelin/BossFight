@@ -1,0 +1,14 @@
+INPUT(
+./release\main.o
+./release\personne.o
+./release\contexte.o
+./release\panier.o
+./release\sfml.o
+./release\livingentities.o
+./release\player.o
+./release\boss.o
+./release\moc_myqobject.o
+./release\moc_personne.o
+./release\moc_contexte.o
+./release\moc_panier.o
+);
