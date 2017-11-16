@@ -1,5 +1,5 @@
 # BossFight
-But à long terme: jeu de combat pour 2 joueurs s'affrontant indirèctement par l'intermédiaire d'un boss.
+But à long terme: jeu de combat pour 2 joueurs s'affrontant indirectement par l'intermédiaire d'un boss.
 Le boss d'un joueur est possiblement amélioré par le joueur adverse avant chaque round.
 
 Projet actuel: un joueur peut se déplacer, rencontrer des collisions, attaquer, tuer un boss.
