@@ -4,13 +4,11 @@ QT += qml quick
 CONFIG += c++11
 
 SOURCES += cpp/main.cpp \
-    cpp/personne.cpp \
-    cpp/contexte.cpp \
-    cpp/panier.cpp \
-    sfml.cpp \
-    livingentities.cpp \
-    player.cpp \
-    boss.cpp
+    cpp/sfml.cpp \
+    cpp/livingentities.cpp \
+    cpp/player.cpp \
+    cpp/boss.cpp \
+    cpp/game.cpp
 
 
 # Additional import path used to resolve QML modules in Qt Creator's code model
@@ -36,23 +34,19 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 HEADERS += \
-    cpp/myqobject.h \
-    cpp/personne.h \
-    cpp/contexte.h \
-    cpp/panier.h \
-    sfml.h \
-    livingentities.h \
-    player.h \
-    boss.h
+    cpp/sfml.h \
+    cpp/livingentities.h \
+    cpp/player.h \
+    cpp/boss.h \
+    cpp/game.h
 
 DISTFILES += \
-    qml/qml.qml \
-    qml/MyTableView.qml
+    qml/qml.qml
 
-INCLUDEPATH += C:\Boss_Fight_Main\SFML-2.4.2\include
-DEPENDPATH += C:\Boss_Fight_Main\SFML-2.4.2\include
+INCLUDEPATH += C:\BossFight-master\SFML-2.4.2\include
+DEPENDPATH += C:\BossFight-master\SFML-2.4.2\include
 
-LIBS += -LC:\Boss_Fight_Main\SFML-2.4.2-Build\LIBS
+LIBS += -LC:\BossFight-master\SFML-2.4.2-Build\LIBS
 
 CONFIG(debug, debug|release): LIBS += -lsfml-audio-d -lsfml-system-d -lsfml-network-d -lsfml-main-d -lsfml-window-d -lsfml-graphics-d
 CONFIG(release, debug|release): LIBS += -lsfml-audio -lsfml-system -lsfml-network -lsfml-main -lsfml-window -lsfml-graphics

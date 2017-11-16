@@ -1,16 +1,16 @@
 /****************************************************************************
-** Meta object code from reading C++ file 'myqobject.h'
+** Meta object code from reading C++ file 'game.h'
 **
 ** Created by: The Qt Meta Object Compiler version 67 (Qt 5.9.1)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
-#include "../cpp/myqobject.h"
+#include "../cpp/game.h"
 #include <QtCore/qbytearray.h>
 #include <QtCore/qmetatype.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)
-#error "The header file 'myqobject.h' doesn't include <QObject>."
+#error "The header file 'game.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 67
 #error "This file was generated using the moc from 5.9.1. It"
 #error "cannot be used with the include files from this version of Qt."
@@ -20,56 +20,60 @@
 QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
-struct qt_meta_stringdata_MyQObject_t {
-    QByteArrayData data[5];
-    char stringdata0[48];
+struct qt_meta_stringdata_Game_t {
+    QByteArrayData data[7];
+    char stringdata0[85];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-    qptrdiff(offsetof(qt_meta_stringdata_MyQObject_t, stringdata0) + ofs \
+    qptrdiff(offsetof(qt_meta_stringdata_Game_t, stringdata0) + ofs \
         - idx * sizeof(QByteArrayData)) \
     )
-static const qt_meta_stringdata_MyQObject_t qt_meta_stringdata_MyQObject = {
+static const qt_meta_stringdata_Game_t qt_meta_stringdata_Game = {
     {
-QT_MOC_LITERAL(0, 0, 9), // "MyQObject"
-QT_MOC_LITERAL(1, 10, 15), // "myStringChanged"
-QT_MOC_LITERAL(2, 26, 0), // ""
-QT_MOC_LITERAL(3, 27, 8), // "myString"
-QT_MOC_LITERAL(4, 36, 11) // "setmyString"
+QT_MOC_LITERAL(0, 0, 4), // "Game"
+QT_MOC_LITERAL(1, 5, 21), // "rootVisibilityChanged"
+QT_MOC_LITERAL(2, 27, 0), // ""
+QT_MOC_LITERAL(3, 28, 14), // "rootVisibility"
+QT_MOC_LITERAL(4, 43, 13), // "doActionInCpp"
+QT_MOC_LITERAL(5, 57, 9), // "nomAction"
+QT_MOC_LITERAL(6, 67, 17) // "setRootVisibility"
 
     },
-    "MyQObject\0myStringChanged\0\0myString\0"
-    "setmyString"
+    "Game\0rootVisibilityChanged\0\0rootVisibility\0"
+    "doActionInCpp\0nomAction\0setRootVisibility"
 };
 #undef QT_MOC_LITERAL
 
-static const uint qt_meta_data_MyQObject[] = {
+static const uint qt_meta_data_Game[] = {
 
  // content:
        7,       // revision
        0,       // classname
        0,    0, // classinfo
-       2,   14, // methods
-       1,   30, // properties
+       3,   14, // methods
+       1,   38, // properties
        0,    0, // enums/sets
        0,    0, // constructors
        0,       // flags
        1,       // signalCount
 
  // signals: name, argc, parameters, tag, flags
-       1,    1,   24,    2, 0x06 /* Public */,
+       1,    1,   29,    2, 0x06 /* Public */,
 
  // slots: name, argc, parameters, tag, flags
-       4,    1,   27,    2, 0x0a /* Public */,
+       4,    1,   32,    2, 0x0a /* Public */,
+       6,    1,   35,    2, 0x0a /* Public */,
 
  // signals: parameters
-    QMetaType::Void, QMetaType::QString,    3,
+    QMetaType::Void, QMetaType::Bool,    3,
 
  // slots: parameters
-    QMetaType::Void, QMetaType::QString,    3,
+    QMetaType::Void, QMetaType::QString,    5,
+    QMetaType::Void, QMetaType::Bool,    3,
 
  // properties: name, type, flags
-       3, QMetaType::QString, 0x00495003,
+       3, QMetaType::Bool, 0x00495103,
 
  // properties: notify_signal_id
        0,
@@ -77,22 +81,23 @@ static const uint qt_meta_data_MyQObject[] = {
        0        // eod
 };
 
-void MyQObject::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+void Game::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
-        MyQObject *_t = static_cast<MyQObject *>(_o);
+        Game *_t = static_cast<Game *>(_o);
         Q_UNUSED(_t)
         switch (_id) {
-        case 0: _t->myStringChanged((*reinterpret_cast< QString(*)>(_a[1]))); break;
-        case 1: _t->setmyString((*reinterpret_cast< QString(*)>(_a[1]))); break;
+        case 0: _t->rootVisibilityChanged((*reinterpret_cast< bool(*)>(_a[1]))); break;
+        case 1: _t->doActionInCpp((*reinterpret_cast< QString(*)>(_a[1]))); break;
+        case 2: _t->setRootVisibility((*reinterpret_cast< bool(*)>(_a[1]))); break;
         default: ;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
         int *result = reinterpret_cast<int *>(_a[0]);
         void **func = reinterpret_cast<void **>(_a[1]);
         {
-            typedef void (MyQObject::*_t)(QString );
-            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&MyQObject::myStringChanged)) {
+            typedef void (Game::*_t)(bool );
+            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&Game::rootVisibilityChanged)) {
                 *result = 0;
                 return;
             }
@@ -100,19 +105,19 @@ void MyQObject::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, v
     }
 #ifndef QT_NO_PROPERTIES
     else if (_c == QMetaObject::ReadProperty) {
-        MyQObject *_t = static_cast<MyQObject *>(_o);
+        Game *_t = static_cast<Game *>(_o);
         Q_UNUSED(_t)
         void *_v = _a[0];
         switch (_id) {
-        case 0: *reinterpret_cast< QString*>(_v) = _t->myString(); break;
+        case 0: *reinterpret_cast< bool*>(_v) = _t->rootVisibility(); break;
         default: break;
         }
     } else if (_c == QMetaObject::WriteProperty) {
-        MyQObject *_t = static_cast<MyQObject *>(_o);
+        Game *_t = static_cast<Game *>(_o);
         Q_UNUSED(_t)
         void *_v = _a[0];
         switch (_id) {
-        case 0: _t->setmyString(*reinterpret_cast< QString*>(_v)); break;
+        case 0: _t->setRootVisibility(*reinterpret_cast< bool*>(_v)); break;
         default: break;
         }
     } else if (_c == QMetaObject::ResetProperty) {
@@ -120,38 +125,38 @@ void MyQObject::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, v
 #endif // QT_NO_PROPERTIES
 }
 
-const QMetaObject MyQObject::staticMetaObject = {
-    { &QObject::staticMetaObject, qt_meta_stringdata_MyQObject.data,
-      qt_meta_data_MyQObject,  qt_static_metacall, nullptr, nullptr}
+const QMetaObject Game::staticMetaObject = {
+    { &QObject::staticMetaObject, qt_meta_stringdata_Game.data,
+      qt_meta_data_Game,  qt_static_metacall, nullptr, nullptr}
 };
 
 
-const QMetaObject *MyQObject::metaObject() const
+const QMetaObject *Game::metaObject() const
 {
     return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
 }
 
-void *MyQObject::qt_metacast(const char *_clname)
+void *Game::qt_metacast(const char *_clname)
 {
     if (!_clname) return nullptr;
-    if (!strcmp(_clname, qt_meta_stringdata_MyQObject.stringdata0))
-        return static_cast<void*>(const_cast< MyQObject*>(this));
+    if (!strcmp(_clname, qt_meta_stringdata_Game.stringdata0))
+        return static_cast<void*>(const_cast< Game*>(this));
     return QObject::qt_metacast(_clname);
 }
 
-int MyQObject::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+int Game::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
     _id = QObject::qt_metacall(_c, _id, _a);
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 2)
+        if (_id < 3)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 2;
+        _id -= 3;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 2)
+        if (_id < 3)
             *reinterpret_cast<int*>(_a[0]) = -1;
-        _id -= 2;
+        _id -= 3;
     }
 #ifndef QT_NO_PROPERTIES
    else if (_c == QMetaObject::ReadProperty || _c == QMetaObject::WriteProperty
@@ -174,7 +179,7 @@ int MyQObject::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 }
 
 // SIGNAL 0
-void MyQObject::myStringChanged(QString _t1)
+void Game::rootVisibilityChanged(bool _t1)
 {
     void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
     QMetaObject::activate(this, &staticMetaObject, 0, _a);
