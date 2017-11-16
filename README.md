@@ -8,3 +8,5 @@ les annimations des actions précédentes sont opérationnelles.
 Technologies utilisées: Menu en QML, fenêtre de jeu C++/SFML.
 
 Concepts abordés: POO, Héritage, UML, interaction QML/C++, installation et prise en main d'une bibliothèque non connue
+
+Le commit ne contient pas la bibliothèque SFML; pour l'installer veuillez suivre le tuto mis à disposition.
